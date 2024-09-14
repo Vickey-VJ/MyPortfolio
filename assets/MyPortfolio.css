@@ -32,12 +32,13 @@ header .Name {
   margin: 30px;
 }
 
-header button {
+header button{
   padding: 10px 20px;
   font-weight: 700;
   border: 2px solid black;
   font-family: "Nunito Sans", sans-serif;
   border-radius: 30px;
+  
   /* color: var(--primary-color); */
 }
 
@@ -57,12 +58,12 @@ body {
   font-weight: 700;
 }
 
-ul li a {
+.header-links a{
   color: var(--header-text-color);
   text-decoration: none;
 }
 
-ul li a:hover {
+.header-links a:hover {
   opacity: 50%;
 }
 
@@ -82,5 +83,50 @@ section.hero{
 }
 
 .hero-desc{
+  color: rgb(82, 74, 74);
+}
+
+.social-icons{
+  margin: 20px 0;
+  list-style: none;
+  display: flex;
+  gap: 15px;
+}
+
+.social-icons li > a{
+  color: var(--text-color);
+  text-decoration: none;
+  font-size: x-large;
+}
+
+.social-icons li a > i.fa-linkedin:hover{
+  color: #0072b1;
+}
+
+.social-icons li a > i.fa-github:hover{
+  color: #24292e;
+}
+
+.social-icons li a > i.fa-instagram:hover{
+  color: magenta;
+}
+
+/* Buttons */
+.btn{
+  background-color: var(--text-color);
+  color: var(--bg-color);
+  padding: 10px 15px;
+  border-radius: 30px;
+  border: none;
+  cursor: pointer;
+  font-weight: bold;
+  margin-right: 8px;
+  font-family: "Nunito Sans", sans-serif;
+}
+
+
+.btn:hover{
+  /* opacity: 50%; */
+  background-color: #6a6a6a;
   
 }
