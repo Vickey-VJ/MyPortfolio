@@ -1,0 +1,70 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Dela+Gothic+One&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Protest+Guerrilla&family=Raleway:ital,wght@0,100..900;1,100..900&family=Rowdies:wght@300;400;700&display=swap');
+
+:root{
+    --primary-color: #12bdff;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    --bg-color: #1b1f24;
+    --text-color: #fff;
+}
+
+header{
+    background-color: var(--bg-color);
+    padding: 20px;
+    color: var(--text-color);
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+
+header .Name{
+    letter-spacing: 2px;
+    text-decoration: none;
+    color: var(--text-color);
+
+}
+
+header button{
+    padding: 10px 20px;
+    font-weight: 700;
+    border: 2px solid black;
+    font-family: "Nunito Sans", sans-serif;
+    border-radius: 30px;
+    /* color: var(--primary-color); */
+
+    
+}
+
+
+header button:hover{
+    opacity: 50%;
+    cursor: pointer;
+}
+
+header ul{
+    list-style: none;
+    display: flex;
+    gap: 30px;
+    
+}
+
+
+body{
+    font-family: "Nunito Sans", sans-serif;
+    font-weight: 700;
+}
+
+ul li a{
+    color: var(--text-color);
+    text-decoration: none;
+}
+
+ul li a:hover{
+    opacity: 50%;
+}
