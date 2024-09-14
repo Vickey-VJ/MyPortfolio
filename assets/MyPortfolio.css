@@ -2,19 +2,23 @@
 
 :root {
   --primary-color: #12bdff;
+  --bg-color:#fff;
+  --text-color:#1b1f24;
 }
 
 * {
   margin: 0;
   padding: 0;
-  --bg-color: #1b1f24;
-  --text-color: #fff;
+  --header-bg-color: #1b1f24;
+  --header-text-color: #fff;
+  
 }
 
+/* Header */
 header {
-  background-color: var(--bg-color);
+  background-color: var(--header-bg-color);
   padding: 20px;
-  color: var(--text-color);
+  color: var(--header-text-color);
 
   display: flex;
   justify-content: space-between;
@@ -24,7 +28,8 @@ header {
 header .Name {
   letter-spacing: 2px;
   text-decoration: none;
-  color: var(--text-color);
+  color: var(--header-text-color);
+  margin: 30px;
 }
 
 header button {
@@ -53,10 +58,29 @@ body {
 }
 
 ul li a {
-  color: var(--text-color);
+  color: var(--header-text-color);
   text-decoration: none;
 }
 
 ul li a:hover {
   opacity: 50%;
+}
+
+/* Hero */
+section.hero{
+  background-color: var(--bg-color);
+  color:var(--text-color);
+  display: flex;
+  align-items: center;
+  padding: 20px 120px 0 120px;
+  justify-content: space-between;
+}
+
+.hero-name{
+  font-size: 40px;
+  font-weight: 900;
+}
+
+.hero-desc{
+  
 }
