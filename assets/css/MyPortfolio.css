@@ -133,10 +133,18 @@ section.hero{
   
 }
 
-.skills-main{
+.skills-main {
   /* display: flex; */
   align-items: center;
 }
+
+.skills-list li{
+  list-style-type: none;
+  /* border: 2px solid black; */
+  align-items: center;
+  margin-bottom: 5px;
+}
+
 
 /* Buttons */
 .btn{
