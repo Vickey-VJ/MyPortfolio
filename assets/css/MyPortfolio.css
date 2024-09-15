@@ -67,6 +67,9 @@ body {
   opacity: 50%;
 }
 
+main{
+  /* padding: 20px 120px 0 120px; */
+}
 /* Hero */
 section.hero{
   background-color: var(--bg-color);
@@ -115,12 +118,32 @@ section.hero{
   margin-right: 8px;
 }
 
+/* Skills Section */
+
+.skills{
+  padding: 20px 120px 0 120px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.skills-img img{
+  border-radius: 50%;
+  /* border: 5px solid black; */
+  box-shadow: 0 0 20px;
+  
+}
+
+.skills-main{
+  /* display: flex; */
+  align-items: center;
+}
+
 /* Buttons */
 .btn{
   background-color: var(--text-color);
   color: var(--bg-color);
   padding: 10px 15px;
-  border-radius: 30px;
+  border-radius: 5px;
   border: none;
   cursor: pointer;
   font-weight: bold;
