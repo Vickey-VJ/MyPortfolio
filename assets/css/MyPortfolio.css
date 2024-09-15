@@ -67,9 +67,6 @@ body {
   opacity: 50%;
 }
 
-main{
-  /* padding: 20px 120px 0 120px; */
-}
 /* Hero */
 section.hero{
   background-color: var(--bg-color);
