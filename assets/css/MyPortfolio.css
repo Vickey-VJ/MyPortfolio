@@ -12,7 +12,7 @@
   --header-bg-color: #1b1f24;
   --header-text-color: #fff;
   --default-padding: 20px 120px 0 120px;
-
+  --screen-height: 650px;
   
 }
 
@@ -81,6 +81,7 @@ section.hero{
   align-items: center;
   padding: var(--default-padding);
   justify-content: space-between;
+  height: 650px;
 }
 
 .hero-name{
@@ -128,10 +129,43 @@ section.hero{
   
 }
 
-.about h2{
-  text-align: center;
-  text-decoration: underline;
+.about > div{
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
+
+.about img{
+  width: 300px;
+  padding: 5px;
+  border: 5px solid black;
+  border-radius: 50%;
+  box-shadow: 0 0 40px;
+}
+
+.about-points{
+  font-weight: 500;
+  margin-left: 70px;
+}
+
+.about-points h3{
+  font-size: 28px;
+  padding-bottom: 10px;
+}
+
+.about-points ul{
+  list-style: none;
+  font-size: 20px;
+}
+
+.about-points li{
+  padding-bottom: 10px;
+}
+
+#about-button{
+  margin-top: 15px;
+}
+
 
 /* SECTION 3: Skills */
 .skills-section {
@@ -139,11 +173,6 @@ section.hero{
   margin-bottom: 55px;
 }
 
-.skills-section h2 {
-  text-align: center;
-  font-size: 35px;
-  text-decoration: underline;
-}
 
 .skills-section .text {
   text-align: center;
@@ -186,6 +215,12 @@ section.hero{
   font-size: 18px;
 }
 
+/* Headings */
+.headings{
+  text-align: center;
+  font-size: 35px;
+  text-decoration: underline;
+}
 
 
 /* Buttons */
