@@ -11,6 +11,8 @@
   padding: 0;
   --header-bg-color: #1b1f24;
   --header-text-color: #fff;
+  --default-padding: 20px 120px 0 120px;
+
   
 }
 
@@ -53,6 +55,10 @@ header ul {
   gap: 30px;
 }
 
+h2{
+  font-size: 35px;
+}
+
 body {
   font-family: "Nunito Sans", sans-serif;
   font-weight: 700;
@@ -73,7 +79,7 @@ section.hero{
   color:var(--text-color);
   display: flex;
   align-items: center;
-  padding: 20px 120px 0 120px;
+  padding: var(--default-padding);
   justify-content: space-between;
 }
 
@@ -115,25 +121,22 @@ section.hero{
   margin-right: 8px;
 }
 
-/* Skills Section */
-
-.skills{
-  padding: 20px 120px 0 120px;
-  display: flex;
-  justify-content: space-between;
-}
-
-.skills-img img{
-  border-radius: 50%;
-  /* border: 5px solid black; */
-  box-shadow: 0 0 20px;
+/* Section 2: About */
+.about{
+  background-color: var(--bg-color);
+  padding: var(--default-padding);
   
 }
 
-/* SECTION 2: Skills */
+.about h2{
+  text-align: center;
+  text-decoration: underline;
+}
+
+/* SECTION 3: Skills */
 .skills-section {
-  padding: 0 50px;
-  margin-bottom: 100px;
+  padding: var(--default-padding);
+  margin-bottom: 55px;
 }
 
 .skills-section h2 {
@@ -151,10 +154,11 @@ section.hero{
 }
 
 .skills-section .cells {
-  display: flex;
+  display: inline-flex;
   
-  justify-content: center;
-  flex-wrap: wrap;
+  justify-content:center;
+  /* align-items: center ; */
+  flex-wrap:wrap;
 
 }
 
