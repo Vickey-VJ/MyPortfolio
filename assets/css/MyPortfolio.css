@@ -13,6 +13,7 @@
   --header-text-color: #fff;
   --default-padding: 20px 120px 0 120px;
   --screen-height: 650px;
+  --desc-color: rgb(82, 74, 74);
   
 }
 
@@ -70,7 +71,7 @@ body {
 }
 
 .header-links a:hover {
-  opacity: 50%;
+opacity: 50%;
 }
 
 /* Hero */
@@ -155,11 +156,26 @@ section.hero{
 
 .about-points ul{
   list-style: none;
+  margin-top: 8px;
   font-size: 20px;
+  color: var(--desc-color);
 }
 
 .about-points li{
   padding-bottom: 10px;
+}
+
+.about-points li > b{
+  color: var(--text-color);
+}
+
+.about-points li a{
+  text-decoration: none;
+  color: var(--desc-color);
+}
+
+.about-points li a:hover{
+  color: var(--text-color);
 }
 
 #about-button{
@@ -178,8 +194,6 @@ section.hero{
   text-align: center;
   margin-bottom: 20px;
   color: rgb(82, 74, 74);
-  
-
 }
 
 .skills-section .cells {
