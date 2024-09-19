@@ -4,6 +4,7 @@
   --primary-color: #12bdff;
   --bg-color:#fff;
   --text-color:#1b1f24;
+  --font-family: "Nunito Sans", sans-serif;
 }
 
 * {
@@ -13,8 +14,8 @@
   --header-text-color: #fff;
   --default-padding: 20px 120px 0 120px;
   --screen-height: 650px;
-  --desc-color: rgb(82, 74, 74);
   
+
 }
 
 /* Header */
@@ -239,9 +240,48 @@ section.hero{
   display: flex;
   justify-content: space-around;
   /* margin-right: 40px; */
+  
 }
 
+/* Contact section 5 */
+.contact{
+  padding: var(--default-padding);
+  text-align: center;
+}
 
+.contact form input, textarea{
+  padding: 5px 10px;
+  outline: none;
+  width: 430px;
+  border-radius: 5px;
+  border: 2.5px solid black;
+  margin-bottom: 10px;
+  font-family: var(--font-family);
+  font-weight: 700;
+  resize: none;
+}
+
+.contact button{
+  width: 150px;
+  margin-left: -305px;
+}
+
+/* Footer */
+footer{
+  background-color: var(--header-bg-color);
+  color: var(--header-text-color);
+  padding: 30px;
+  text-align: center;
+}
+
+footer a{
+  text-decoration: none;
+  color: var(--header-text-color) ;
+}
+
+footer a:hover{
+  opacity: 50%;
+}
 
 
 /* Headings */
