@@ -253,12 +253,17 @@ section.hero{
   padding: 5px 10px;
   outline: none;
   width: 430px;
+  height: 32px;
   border-radius: 5px;
   border: 2.5px solid black;
   margin-bottom: 10px;
   font-family: var(--font-family);
   font-weight: 700;
   resize: none;
+}
+
+.contact textarea{
+  height: auto;
 }
 
 .contact button{
