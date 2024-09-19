@@ -18,6 +18,16 @@
 
 }
 
+html{
+  scroll-behavior: smooth !important;
+}
+
+body {
+  font-family: "Nunito Sans", sans-serif;
+  font-weight: 700;
+  scroll-behavior: smooth;
+}
+
 /* Header */
 header {
   background-color: var(--header-bg-color);
@@ -61,10 +71,6 @@ h2{
   font-size: 35px;
 }
 
-body {
-  font-family: "Nunito Sans", sans-serif;
-  font-weight: 700;
-}
 
 .header-links a{
   color: var(--header-text-color);
