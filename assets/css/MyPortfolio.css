@@ -278,7 +278,9 @@ section.hero{
 
 .contact button{
   width: 150px;
-  margin-left: -305px;
+  /* margin-left: -305px; */
+  /* margin: 100; */
+
 }
 
 /* Footer */
