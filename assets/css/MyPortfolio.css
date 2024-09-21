@@ -14,7 +14,7 @@
   --header-text-color: #fff;
   --default-padding: 20px 120px 0 120px;
   --screen-height: 650px;
-  
+  --media-padding: 40px;
 
 }
 
@@ -128,6 +128,10 @@ section.hero{
 
 .hero-buttons button{
   margin-right: 8px;
+}
+
+#headshot-img{
+  height: 200;
 }
 
 /* Section 2: About */
@@ -359,4 +363,116 @@ footer a:hover{
   /* opacity: 50%; */
   background-color: #6a6a6a;
   
+}
+
+/* Media queries */
+@media only screen and (max-width: 800px){
+
+  /* Header  */
+  header{
+    flex-direction: column;
+    /* width: 388px; */
+  }
+
+  .name{
+    margin-bottom: 12px;
+  }
+
+  .header-links{
+    margin-bottom: 13px;
+  }
+
+    /* Hero section */
+  section.hero{
+    padding: var(--media-padding);
+    flex-direction: column;
+    margin-bottom: 50px;
+  }
+
+  .hero-desc{
+    text-align: justify;
+  }
+
+  #headshot-img{
+    /* background-color: #1b1f24; */
+    padding-top: 15px;
+    width: 300px;
+  }
+
+  /* About me section */
+
+  section.about{
+    padding: var(--media-padding);
+    margin-bottom: -40px;
+  }
+  .about .headings{
+    margin-top: -20px;
+  }
+  section.about > div{
+    flex-direction: column;
+    /* padding: 40px !important; */
+    text-align: left;
+  }
+
+  .about-icon > img{
+    width: 200px;
+    box-shadow: 0 0 15px;
+    /* border: none; */
+    margin-bottom: 20px;
+  }
+
+  .about-points{
+    margin: 0;
+  }
+
+  /* Skills section */
+  section.skills-section{
+    padding: var(--media-padding);
+    margin-bottom: -15px;
+    margin-top: -20px;
+  }
+
+  .skills-section .text{
+    text-align: justify;
+  }
+
+  .skills-section .cells{
+    margin-top: -20px;
+  }
+
+  /* Projects section */
+  section.projects-section{
+    padding: var(--media-padding);
+    margin-bottom: -65px;
+    margin-top: -20px;
+  }
+
+  .projects-section-div{
+    flex-direction: column;
+  }
+
+  .projects-section-div .box{
+    margin-bottom: 25px;
+  }
+
+  /* Contact section */
+  section.contact{
+    padding: var(--media-padding);
+    margin-top: -20px;
+    margin-bottom: -40px;
+    /* text-align: justify; */
+  }
+
+  .contact form input, textarea{
+    width: 93%;
+  }
+
+  .contact form textarea{
+    padding-top: 10px;
+  }
+
+  .contact button{
+    width: 100%;
+    margin: 0;
+  }
 }
