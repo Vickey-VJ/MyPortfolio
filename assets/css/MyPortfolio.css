@@ -14,7 +14,7 @@
   --header-text-color: #fff;
   --default-padding: 20px 120px 0 120px;
   --screen-height: 650px;
-  --media-padding: 40px;
+  --media-padding: 25px;
 
 }
 
@@ -405,9 +405,11 @@ footer a:hover{
     padding: var(--media-padding);
     margin-bottom: -40px;
   }
+
   .about .headings{
     margin-top: -20px;
   }
+  
   section.about > div{
     flex-direction: column;
     /* padding: 40px !important; */
@@ -460,7 +462,7 @@ footer a:hover{
     padding: var(--media-padding);
     margin-top: -20px;
     margin-bottom: -40px;
-    /* text-align: justify; */
+    text-align: center;
   }
 
   .contact form input, textarea{
@@ -472,7 +474,20 @@ footer a:hover{
   }
 
   .contact button{
-    width: 100%;
+    /* align-items: center; */
+    /* width: 100%; */
     margin: 0;
   }
+}
+
+@media only screen and (max-width: 360px){
+  section.hero{
+    padding: var(--media-padding);
+    margin-bottom: 150px;
+  }
+
+  .hero-name{
+    font-size: 2rem;
+  }
+
 }
